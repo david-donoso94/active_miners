@@ -246,31 +246,29 @@ header {
     border-radius: 200px;
     
 }
+
 /*footer*/
 footer{
-    background-color: #948160;
-    color: white;
-}
-.Newsletter {
-    background-color: #948160;
-    text-align: start;
-    font-size: 15px;
-}
-
-footer p {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
+    background-color: #a89470 ;
+    color: #263238;
+    padding: 40px 20px;
+    border-radius: 0px 0px 80px 80px;
     
 }
-footer a {
-    text-decoration: none;
-    color: #000;
-    font-size: 15px;
-
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
 }
-.copy{
-    font-size: 10px;
+.footer-top a,li{
+    text-decoration: none;
+    color: #FCF596;
+}
+.footer-top h5 {
+    font-family: "tinos";
+    font-size: 20px;
+}
+.footer-copy{
+    font-size: 11px;
     text-align: center;
     
 }
