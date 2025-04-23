@@ -21,11 +21,10 @@ header {
     text-align: center;
 }
 .header-top h1 {
-    
     font-family: "Special Gothic Expanded One", sans-serif;
-        
+    margin-bottom: 5px;   
 }
-.header-top img{
+.header-top img {
     display: flex;
     align-items: center;
     height: 100px;
@@ -33,9 +32,7 @@ header {
     border-radius: 99px 99px 99px 99px;
     margin: 25px 0 0 25px;
 }
-.header-top h1{
-   margin-bottom: 5px;
-}
+
 .header-top p{
     font-family: "tinos", serif;
     font-weight: 500;
@@ -65,12 +62,16 @@ header {
 }
 
 @media (max-width: 480px){
+    .header-top img {
+       margin: 15px;
+    }
     .header-nav {
         gap: 8px;
         margin: 5px;
     }
     .header-nav a {
-        padding: 11px 11px;
+        padding: 11px;
+        font-size: 12px;
     }
 
 }
@@ -150,12 +151,12 @@ header {
         flex-direction: column;
     }
     .div2 img {
-        width: 400px;
-        height: 390px; 
+        width: 350px;
+         
     }
     .div3 img {
-        width: 400px;
-        height: 390px; 
+        width: 350px;
+        
     }
 }
 
@@ -252,6 +253,16 @@ footer {
 }
 
 @media (max-width: 480px){
+
+    .footer-container{
+        gap: 5px;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .footer-container h5 {
+        font-size: 13px;
+        padding: 5px;
+    }
     .footer-img {
         left: 63%;
         top: 45%;
