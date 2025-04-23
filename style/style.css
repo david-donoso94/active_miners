@@ -63,18 +63,21 @@ header {
 
 @media (max-width: 480px){
     .header-top h1 {
-        font-size: 23px;
+        font-size: 21px;
+    }
+    .header-top p {
+        font-size: 17px;
     }
     .header-top img {
        margin: 15px;
     }
     .header-nav {
-        gap: 5px;
-        margin: 5px;
+        gap: 4px;
+        margin: 4px;
     }
     .header-nav a {
-        padding: 12px;
-        font-size: 12px;
+        padding: 9px;
+        font-size: 10px;
     }
 
 }
@@ -164,11 +167,12 @@ header {
     .div2 img {
         width: 320px;
         height: 280px;
+        box-shadow: none;
     }
     .div3 img {
         width: 320px;
         height: 280px;
-        
+        box-shadow: none;
     }
 }
 
@@ -282,7 +286,9 @@ footer {
     .footer-container li {
         padding: 3px;
     }
-    
+    .footer-top-3 {
+        text-align: center;
+    }
 }
 
 
