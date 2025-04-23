@@ -47,10 +47,12 @@ header {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    text-align: center;
 }
 .header-nav a{
     color: #fff;
     text-decoration: none;
+    align-content: center;
     padding: 1rem 1rem;
     margin-bottom: 15px;
     background-color: #4C4B16;
@@ -65,11 +67,11 @@ header {
 @media (max-width: 480px){
     .header-nav {
         gap: 8px;
+        margin: 5px;
     }
     .header-nav a {
         padding: 11px 11px;
     }
-
 
 }
 
@@ -98,9 +100,9 @@ header {
     color: #263238;
 }
 .leter {
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 85px;
-    transition: 0.2s ease;  
+    transition: 0.2s;  
 }
 .leter:hover {
     color: #FCF596;
@@ -249,6 +251,12 @@ footer {
     
 }
 
+@media (max-width: 480px){
+    .footer-img {
+        left: 63%;
+        top: 45%;
+    }
+}
 
 
 
