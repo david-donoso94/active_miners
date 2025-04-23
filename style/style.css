@@ -54,7 +54,7 @@ header {
     margin-bottom: 15px;
     background-color: #4C4B16;
     border-radius: 5px;
-    transition: 0.3s ease;
+    transition: 0.3s;
     
 }
 .header-nav a:hover{
@@ -62,15 +62,18 @@ header {
 }
 
 @media (max-width: 480px){
+    .header-top h1 {
+        font-size: 23px;
+    }
     .header-top img {
        margin: 15px;
     }
     .header-nav {
-        gap: 8px;
+        gap: 5px;
         margin: 5px;
     }
     .header-nav a {
-        padding: 11px;
+        padding: 12px;
         font-size: 12px;
     }
 
@@ -110,6 +113,14 @@ header {
     font-size: 35px;
 }
 
+@media (max-width: 480px){
+    .leter {
+        font-size: 15px;
+    }
+    .leter:hover {
+        font-size: 20px ;
+    }
+}
 
 /*Box litifero y metalifero*/
 .div1 h2 {
@@ -151,11 +162,12 @@ header {
         flex-direction: column;
     }
     .div2 img {
-        width: 350px;
-         
+        width: 320px;
+        height: 280px;
     }
     .div3 img {
-        width: 350px;
+        width: 320px;
+        height: 280px;
         
     }
 }
@@ -255,18 +267,22 @@ footer {
 @media (max-width: 480px){
 
     .footer-container{
-        gap: 5px;
-        margin: 5px;
+        gap: 3px;
+        margin: 8px;
         font-size: 10px;
     }
     .footer-container h5 {
-        font-size: 13px;
-        padding: 5px;
+        font-size: 10px;
+        padding: 2px;
     }
     .footer-img {
-        left: 63%;
-        top: 45%;
+        left: 50%;
+        top: 43%;
     }
+    .footer-container li {
+        padding: 3px;
+    }
+    
 }
 
 
