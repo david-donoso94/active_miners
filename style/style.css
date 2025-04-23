@@ -95,8 +95,9 @@ header {
     color: #F5F5F5; 
 }
 
-.card-box h1, h2 {
+.card-box h2 {
     font-family: "poppins,";
+    font-size: 35px;
    
 }
 .card-box a, p, li {
@@ -117,6 +118,9 @@ header {
 }
 
 @media (max-width: 480px){
+    .card-box h2 {
+        font-size: 23px;
+    }
     .leter {
         font-size: 15px;
     }
@@ -221,8 +225,9 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0.3; 
+        opacity: 0.2; 
         pointer-events: none; 
+        
 }
 .footer-img img{
     border-radius: 200px;
