@@ -147,7 +147,16 @@ header {
     height: 390px;
     border-radius: 10px;
     box-shadow: 7px 8px 14px 3px rgba(128,125,125,0.65);
-
+}
+.div2 h4{
+    margin: 10px;
+}
+.div2 p {
+    font-size: 15px;
+    color: #263238;
+}
+.div3 h4{
+    margin: 10px;
 }
 .div3 img {
     width: 550px;
@@ -155,12 +164,8 @@ header {
     border-radius: 10px;
     box-shadow: -7px 8px 14px 3px rgba(128,125,125,0.65);
 }
-.div2 .div3 a{
-    text-decoration: none;
-    margin: 15px;
-}
-.div2 .div3 p{
-    font-size: 1.2em;
+.div3 p{
+    font-size: 15px;
     color: #263238;
 }
 
@@ -173,10 +178,16 @@ header {
         height: 280px;
         box-shadow: none;
     }
+    .div2 p {
+        font-size: 12px;
+    }
     .div3 img {
         width: 320px;
         height: 280px;
         box-shadow: none;
+    }
+    .div3 p {
+        font-size: 12px;
     }
 }
 .container-videos {
@@ -289,52 +300,67 @@ header {
 
 
 /*Quienes-somos*/
-
 .container-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 8px;    
-} 
-.div1-qm {
-    grid-column: span 4 / span 4;
-    align-content: center;
+    grid-template-columns: (repeat(6,1fr));
+    grid-template-rows: (repeat(6,1fr));
+}
+.div1-qs {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    text-align: center;
+    margin: 25px;
+}
+.div1-qs h2 {
+    font-family:"Special Gothic Expanded One", sans-serif;
+}
+.div2-qs {
+    grid-column: 2/6;
+    grid-row: 2/4;
+    text-align: center;
+    margin: 35px;
+}
+.div3-qs {
+    grid-column: 2/6;
+    grid-row: 4/6;
+    margin: 1rem 0 1rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.div4-qs {
+    grid-column: 3/5;
+    grid-row: 6/7;
     text-align: center;
 }
-.div1-qm h1 {
-    font-family: "tinos", serif;
-    font-size: 40px;
-    
+.div4-qs a {
+    text-decoration: none;
+    color: black;
 }
-.div2-qm {
-    grid-column: span 4 / span 4;
-    grid-row-start: 2;
-    text-align: center;
-}
-.div2-qm p {
-    font-size: 1.1rem;
-}
-.div3-qm {
-    grid-column: span 2 / span 2;
-    grid-row-start: 3;
-    text-align: center;
+.div4-qs h4 {
+    font-family:"Special Gothic Expanded One", sans-serif; 
 }
 
-.div4-qm {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 3;
-    text-align: center;
+@media (max-width: 480px){
+    .div1-qs{
+        font-size: 14px;
+    }
+    .div2-qs{
+        font-size: 13px;
+    }
+    .div3-qs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .div3-qs img{
+        height: 75%;
+        width: 80%;
+        margin: 10px;
+    }
+    .div4-qs {
+        font-size: 13px;
+    }
 }
-
-.div5-qm {
-    grid-column: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 4;
-    align-content: center;
-    text-align: center;
-}
- 
 
 /*metodos de perforacion*/
 .parent-mp {
