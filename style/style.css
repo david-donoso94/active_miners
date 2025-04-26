@@ -179,17 +179,19 @@ header {
         box-shadow: none;
     }
 }
-
-/*logo fijo
-.fixed-box {
-    position: fixed;
-    top: 550px;
-    right: 15px;
+.container-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
 }
-.fixed-box img{
-    border-radius: 200px;
-    
-}*/
+.container-videos h5 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px; 
+}
 
 /*footer*/
 
@@ -215,7 +217,7 @@ header {
     align-content: center;
     justify-items: center;
     border: #cecece solid 1px;
-    border-radius: 0px 40px 41px 0px;
+    border-radius: 43px;
 }
 .footer-top-1 a {
     display: flex;
@@ -252,7 +254,7 @@ header {
     justify-items: center;
     align-content: center;
     border: #cecece solid 1px; 
-    border-radius: 43px 0px 0px 41px;
+    border-radius: 43px;
 }
 .footer-top-3 a{
     font-family: "Comic Neue";
@@ -269,12 +271,19 @@ header {
 }
 
 @media (max-width: 480px){
+    .footer-top-1 {
+        font-size: 10px;
+    }
+    
     .footer-top-2 a {
         width: 25px;
-        height: 25px;
+        height: 16px;
     } 
-    .footer-top-3 h5{
-        font-size: 18px;
+    .footer-top-3 {
+        font-size: 10px;
+    }
+    .footer-top-3 h5 {
+        font-size: 12px;
     }
 }
 
