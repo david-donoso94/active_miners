@@ -374,52 +374,6 @@ header {
 }
 
 /*metodos de perforacion*/
-.parent-mp {
-    background: #FDFAF6;
-    align-content: center;
-    
-}
-.parent-mp {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-}   
-.div1-mp {
-    grid-column: 2/2;
-    grid-row: 2/2; 
-}
-.div1-mp li {
-    list-style: none;
-    margin: 5px;
-    border-radius: 75px 75px 75px 75px;
-    border: 3px solid #546c79;
-    background: #263238;
-}
-.div1-mp a {
-    text-decoration: none;
-    color: white;
-}
-.div2-mp {
-    grid-column-start: 3;
-}
-
-.div3-mp { 
-    grid-column-start: 4;
-}
-.div4-mp {  
-    grid-column-start: 3;
-    grid-row-start: 2;   
-}       
-.div2-mp img {
-    box-shadow: -8px 6px 45px 3px rgba(148,139,139,0.35);
-} 
-.div3-mp img {
-    box-shadow: -8px 6px 45px 3px rgba(148,139,139,0.35);
-}      
-.div4-mp img {
-    box-shadow: 22px 41px 45px 3px rgba(148,139,139,0.35);
-} 
 
 /*Capacitaciones*/
 
