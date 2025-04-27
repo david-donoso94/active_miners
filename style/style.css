@@ -22,7 +22,8 @@ header {
 }
 .header-top h1 {
     font-family: "Special Gothic Expanded One", sans-serif;
-    margin-bottom: 5px;   
+    margin-bottom: 5px;
+    font-size: 35px;   
 }
 .header-top img {
     display: flex;
@@ -36,7 +37,7 @@ header {
 .header-top p{
     font-family: "tinos", serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 23px;
     color: #FCF596;
     margin-bottom: 25px;
 }
@@ -54,7 +55,7 @@ header {
     margin-bottom: 15px;
     background-color: #4C4B16;
     border-radius: 5px;
-    
+    font-size: 14px;
     
 }
 .header-nav a:hover{
@@ -63,10 +64,10 @@ header {
 
 @media (max-width: 480px){
     .header-top h1 {
-        font-size: 21px;
+        font-size: 20px;
     }
     .header-top p {
-        font-size: 17px;
+        font-size: 14px;
     }
     .header-top img {
        margin: 15px;
@@ -104,6 +105,7 @@ header {
     padding: 10px;
     list-style: none;
     font-family: "tinos", serif;
+    font-size: 15px;
     text-decoration: none;
     color: #263238;
 }
@@ -114,7 +116,7 @@ header {
 }
 .leter:hover {
     color: #FCF596;
-    font-size: 35px;
+    font-size: 32px;
 }
 
 @media (max-width: 480px){
@@ -122,10 +124,10 @@ header {
         font-size: 23px;
     }
     .leter {
-        font-size: 15px;
+        font-size: 13px;
     }
     .leter:hover {
-        font-size: 20px ;
+        font-size: 15px ;
     }
 }
 
@@ -133,6 +135,7 @@ header {
 .div1 h2 {
     margin: 25px 0 30px 0;
     text-align: center;
+    font-size: 32px;
     font-family: "Special Gothic Expanded One", sans-serif;
 }
 .parent { 
@@ -150,6 +153,7 @@ header {
 }
 .div2 h4{
     margin: 10px;
+    font-size: 20px;
 }
 .div2 p {
     font-size: 15px;
@@ -157,6 +161,7 @@ header {
 }
 .div3 h4{
     margin: 10px;
+    font-size: 20px;
 }
 .div3 img {
     width: 550px;
@@ -173,10 +178,16 @@ header {
     .parent{
         flex-direction: column;
     }
+    .div1 h2 {
+        font-size: 20px;
+    }
     .div2 img {
         width: 320px;
         height: 280px;
         box-shadow: none;
+    }
+    .div2 h4 {
+        font-size: 15px;
     }
     .div2 p {
         font-size: 12px;
@@ -185,6 +196,9 @@ header {
         width: 320px;
         height: 280px;
         box-shadow: none;
+    }
+    .div3 h4 {
+        font-size: 15px;
     }
     .div3 p {
         font-size: 12px;
@@ -199,10 +213,15 @@ header {
 .container-videos h5 {
     font-family: "Special Gothic Expanded One", sans-serif;
     color: black;
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 30px;
     padding: 10px; 
 }
+@media (max-width: 480px){
+    .container-videos h5 {
+        font-size: 20px;
+    }
+}
+    
 /*footer*/
 
 .footer-container {
@@ -313,12 +332,16 @@ header {
 }
 .div1-qs h2 {
     font-family:"Special Gothic Expanded One", sans-serif;
+    font-size: 32px;
 }
 .div2-qs {
     grid-column: 1/5;
     grid-row: 2/4;
     text-align: center;
     margin: 35px;
+}
+.div2-qs p {
+    font-size: 15px;
 }
 .div3-qs {
     grid-column: 1/5;
@@ -329,8 +352,8 @@ header {
 }
 
 @media (max-width: 480px){
-    .div1-qs{
-        font-size: 14px;
+    .div1-qs h2{
+        font-size: 20px;
     }
     .div2-qs{
         font-size: 13px;
@@ -363,8 +386,8 @@ header {
     gap: 20px;
 }   
 .div1-mp {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2; 
+    grid-column: 2/2;
+    grid-row: 2/2; 
 }
 .div1-mp li {
     list-style: none;
