@@ -428,7 +428,7 @@ header {
 .informacion p {
     font-size: 1.2rem;
 }
-@media (max-width: 500px){
+@media (max-width: 480px){
     .parent-mp {
         display: flex;
         flex-direction: column;
@@ -437,13 +437,9 @@ header {
     .div1-mp h2{
         margin: 25px ;
         font-size: 1.5rem;
+        text-align: center;  
     }
-    .div1-mp a{
-        text-align: center;
-        font-size: 8px;
-        padding: 10px 10px;
-    }
-    .div2-mp img, .div3-mp img, .div4-mp img, .div5-mp img {
+    .div2-mp img, .div3-mp img {
         border-radius: 20px 20px 20px 20px;
         margin-bottom: 10px;
         width: 200px;
