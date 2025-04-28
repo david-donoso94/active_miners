@@ -428,7 +428,7 @@ header {
 .informacion p {
     font-size: 1.2rem;
 }
-@media (max-width: 480px){
+@media (max-width: 500px){
     .parent-mp {
         display: flex;
         flex-direction: column;
