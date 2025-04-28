@@ -436,7 +436,7 @@ header {
     }
     .div1-mp h2{
         margin: 25px ;
-        font-size: 15px;
+        font-size: 1.5rem;
     }
     .div1-mp a{
         text-align: center;
@@ -448,8 +448,12 @@ header {
         margin-bottom: 10px;
         width: 200px;
     }
+    .div2-mp.div3-mp h2{
+        margin: 25px ;
+        font-size: 1.2rem;
+    }
     .informacion h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .informacion p {
         font-size: 0.9rem;
