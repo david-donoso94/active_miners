@@ -1,0 +1,104 @@
+@mixin img-mdp {
+    border-radius: 68px 68px 68px 68px;
+    box-shadow: 0px 15px 30px 5px rgba(87, 79, 79, 0.59);
+    width: 400px;
+}
+@mixin img-mdp-mobile {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.parent-mp {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-bottom: 35px;
+    .div1-mp {
+        grid-column: 1/8;
+        grid-row: 1/2;
+        align-content: center;
+        font-family:"Special Gothic Expanded One", sans-serif;
+        font-size: 1.8rem;   
+    }
+    .div2-mp {
+        grid-column: 2/4;
+        grid-row: 2/5;
+        text-align: center;
+        font-family:"Special Gothic Expanded One", sans-serif; 
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+         }
+        img {
+            @include img-mdp()
+        }
+    }
+    .div3-mp {
+        grid-column: 5/7;
+        grid-row: 2/5;
+        text-align: center;
+        font-family:"Special Gothic Expanded One", sans-serif; 
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+         }
+         img {
+            @include img-mdp()
+        }
+    }
+}
+.informacion {
+    text-align: center;
+    margin: 25px 0 25px 0;
+    h3 {
+        font-family:"Special Gothic Expanded One", sans-serif ;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+@include mobile {
+    .parent-mp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div1-mp {
+        h2{
+            margin: 25px ;
+            font-size: 1.5rem;
+            text-align: center;  
+        }
+        img {
+            @include img-mdp-mobile()
+        }
+    }.div2-mp {
+        h2 {
+            margin: 25px ;
+            font-size: 1.2rem;
+        }
+        img {
+            @include img-mdp-mobile()
+        }
+    }
+    .div3-mp {
+        h2 {
+            margin: 25px ;
+            font-size: 1.2rem;
+        }
+        img {
+            @include img-mdp-mobile()
+        }
+    }
+    .informacion {
+        h3 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }        
+    }
+}
