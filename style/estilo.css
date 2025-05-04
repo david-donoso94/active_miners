@@ -294,6 +294,60 @@ footer .footer-container .footer-top-3 a {
   text-align: center;
 }
 
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.container-grid .div1-qs {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  text-align: center;
+  margin: 25px;
+  align-content: center;
+}
+.container-grid .div1-qs h2 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 30px;
+}
+.container-grid .div2-qs {
+  grid-column: 1/5;
+  grid-row: 2/4;
+  text-align: center;
+  margin: 35px;
+}
+.container-grid .div2-qs p {
+  font-size: 15px;
+}
+.container-grid .div3-qs {
+  grid-column: 1/5;
+  grid-row: 4/6;
+  margin: 1rem 0 1rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+  .div1-qs h2 {
+    font-size: 20px;
+  }
+  .div2-qs p {
+    font-size: 13px;
+  }
+  .div3-qs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .div3-qs img {
+    max-height: 75%;
+    max-width: 80%;
+    margin: 10px;
+  }
+  .div4-qs {
+    font-size: 13px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
