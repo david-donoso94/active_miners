@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 header {
   background: #948160;
   color: white;
@@ -21,7 +22,7 @@ header .header-top img {
   align-items: center;
   height: 100px;
   width: 100px;
-  border-radius: 99px 99px 99px 99px;
+  border-radius: 30px 30px 30px 30px;
   margin: 25px 0 0 25px;
 }
 header .header-top p {
@@ -51,28 +52,28 @@ header .header-nav a:hover {
   background-color: #6b6a25;
 }
 
-@media screen and (max-width: 480px) {
-  .header-top h1 {
-    font-size: 20px;
-  }
-  .header-top p {
-    font-size: 14px;
-  }
-  .header-top img {
-    margin: 15px;
-  }
-  .header-nav {
-    gap: 4px;
-    margin: 4px;
-  }
-  .header-nav a {
-    padding: 9px;
-    font-size: 10px;
-  }
+@media (max-width: 480px) {
+    header .header-top img {
+        margin: 15px;
+    }
+    header .header-top h1 {
+        font-size: 1.8em;
+    }
+    header .header-top p {
+    font-size: 1.1em;
+    }
+    header .header-nav {
+        gap: 4px;
+        margin: 4px;
+    }
+    header .header-nav a {
+         padding: 9px;
+         font-size: 0.85em;
+    }
 }
 main .title-card {
   text-align: center;
-  margin: 35px;
+  margin: 150px 35px 150px 35px;
   padding: 25px;
   color: black;
 }
@@ -97,18 +98,23 @@ main .title-card .card-box .leter {
 }
 main .title-card .card-box .leter :hover {
   color: #FCF596;
-  font-size: 32px;
+  font-size: 1.5em;
 }
-@media screen and (max-width: 480px) {
-  main .card-box h2 {
-    font-size: 23px;
+@media (max-width: 480px) {
+  main .title-card {
+    margin: 50px 25px 50px 25px;
   }
-  main .card-box .leter {
-    font-size: 13px;
+  main .title-card .card-box h2 {
+    font-size: 2em;
   }
-  main .card-box .leter :hover {
-    font-size: 15px;
+  main .title-card .card-box p {
+    font-size: 1em;
   }
+  main .title-card .card-box .leter {
+    font-size: 1.2em;
+    color: #4C4B16;
+  }
+  
 }
 
 .div1 h2 {
@@ -153,34 +159,37 @@ main .title-card .card-box .leter :hover {
   color: #263238;
 }
 
-@media screen and (max-width: 480px) {
-  .parent {
-    flex-direction: column;
+@media (max-width: 480px) {
+    .div1 h2 {
+        font-size: 2em;
+      }
+    .parent {
+        flex-direction: column;
   }
-  .parent .div1 h2 {
-    font-size: 20px;
+    .parent .div2 img {
+        width: 320px;
+        height: 280px;
+        box-shadow: none;
   }
-  .parent .div2 img {
-    width: 320px;
-    height: 280px;
-    box-shadow: none;
+    .parent .div2 h4 {
+        font-size: 1.3em;
   }
-  .parent .div2 h4 {
-    font-size: 15px;
+    .parent .div2 p {
+        font-size: 1em;
+        margin: 5px;
   }
-  .parent .div2 p {
-    font-size: 12px;
+    .parent .div3 img {
+        width: 320px;
+        height: 280px;
+        box-shadow: none;
   }
-  .parent .div3 img {
-    width: 320px;
-    height: 280px;
-    box-shadow: none;
-  }
-  .parent .div3 h4 {
-    font-size: 15px;
+    .parent .div3 h4 {
+        font-size: 1.3em;
+        margin-top: 40px;
   }
   .parent .div3 p {
-    font-size: 12px;
+        font-size: 1em;
+        margin: 5px;
   }
 }
 .container-videos {
@@ -200,9 +209,14 @@ main .title-card .card-box .leter :hover {
   color: #263238;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .container-videos h5 {
-    font-size: 20px;
+    font-size: 2em;
+    margin-top: 40px;
+  }
+  .container-videos p {
+    font-size: 1em;
+    margin-bottom: 10px;
   }
 }
 footer .footer-container {
@@ -270,22 +284,22 @@ footer .footer-container .footer-top-3 a {
   color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+  }  
   .footer-top-1 {
-    font-size: 11px;
-  }
-  .footer-top-2 a {
-    width: 25px;
-    height: 16px;
+    font-size: 0.7em;
   }
   .footer-top-3 {
-    font-size: 11px;
+    font-size: 0.7em;
   }
   .footer-top-3 h5 {
-    font-size: 12px;
+    font-size: 0.8em;
   }
   .footer-top-3 p {
-    font-size: 12px;
+    font-size: 1em;
     text-align: center;
   }
 }
@@ -293,7 +307,7 @@ footer .footer-container .footer-top-3 a {
   font-size: 11px;
   text-align: center;
 }
-
+/*quienes somos*/
 .container-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -327,26 +341,29 @@ footer .footer-container .footer-top-3 a {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 480px) {
-  .div1-qs h2 {
-    font-size: 20px;
+@media (max-width: 480px) {
+  .container-grid {
+    display: flex;
+    flex-direction: column;
   }
-  .div2-qs p {
-    font-size: 13px;
+  .container-grid .div1-qs h2 {
+    font-size: 2.3em;
   }
-  .div3-qs {
+  .container-grid .div2-qs p {
+    font-size: 1em;
+  }
+  .container-grid .div3-qs {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 25px;
   }
-  .div3-qs img {
+  .container-grid .div3-qs img {
     max-height: 75%;
     max-width: 80%;
-    margin: 10px;
+    margin: 20px;
   }
-  .div4-qs {
-    font-size: 13px;
-  }
+/*Metodos_de_perforacion*/
 }
 .parent-mp {
   display: grid;
@@ -406,45 +423,33 @@ footer .footer-container .footer-top-3 a {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .parent-mp {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .div1-mp h2 {
-    margin: 25px;
-    font-size: 1.5rem;
     text-align: center;
-  }
-  .div1-mp img {
-    border-radius: 20px 20px 20px 20px;
+    margin: 25px;
     margin-bottom: 10px;
-    width: 200px;
+    font-size: 1.2em;
   }
   .div2-mp h2 {
     margin: 25px;
-    font-size: 1.2rem;
-  }
-  .div2-mp img {
-    border-radius: 20px 20px 20px 20px;
-    margin-bottom: 10px;
-    width: 200px;
+    font-size: 1em;
   }
   .div3-mp h2 {
     margin: 25px;
     font-size: 1.2rem;
   }
-  .div3-mp img {
-    border-radius: 20px 20px 20px 20px;
-    margin-bottom: 10px;
-    width: 200px;
-  }
   .informacion h3 {
-    font-size: 1.2rem;
+    margin: 10px;
+    font-size: 1.2em;
   }
   .informacion p {
-    font-size: 0.9rem;
+    font-size: 1em;
+    margin: 20px;
   }
 }
 .tecno {
@@ -493,7 +498,7 @@ footer .footer-container .footer-top-3 a {
   width: 400px;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .tecno {
     display: flex;
     flex-direction: column;
@@ -501,21 +506,9 @@ footer .footer-container .footer-top-3 a {
   }
   .tecno .div1-tecno {
     margin: 25px;
-    font-size: 15px;
   }
-  .tecno .div2-tecno h2 {
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-  }
-  .tecno .div2-tecno img {
-    width: 200px;
-  }
-  .tecno .div3-tecno h2 {
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-  }
-  .tecno .div3-tecno img {
-    width: 200px;
+  .div3-tecno h2 {
+    margin: 25px;
   }
 }
 * {
