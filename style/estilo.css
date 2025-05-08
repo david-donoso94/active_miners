@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
 header {
   background: #948160;
   color: white;
@@ -22,7 +17,7 @@ header .header-top img {
   align-items: center;
   height: 100px;
   width: 100px;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 99px 99px 99px 99px;
   margin: 25px 0 0 25px;
 }
 header .header-top p {
@@ -52,71 +47,185 @@ header .header-nav a:hover {
   background-color: #6b6a25;
 }
 
-@media (max-width: 480px) {
-    header .header-top img {
-        margin: 15px;
-    }
-    header .header-top h1 {
-        font-size: 1.8em;
-    }
-    header .header-top p {
-    font-size: 1.1em;
-    }
-    header .header-nav {
-        gap: 4px;
-        margin: 4px;
-    }
-    header .header-nav a {
-         padding: 9px;
-         font-size: 0.85em;
-    }
+@media screen and (max-width: 480px) {
+  header .header-top h1 {
+    font-size: 2rem;
+  }
+  header .header-top p {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  header .header-top img {
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  header .header-nav a {
+    padding: 9px;
+    font-size: 1rem;
+  }
 }
-main .title-card {
+main .img_fondo {
+  width: 100%;
+  height: 500px;
+  background-image: url(/media/montana-fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .grid-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  padding: 40px 0 40px 0;
+  gap: 30px;
+  background-color: #fcf9f5;
+}
+main .grid-card .card-box1 {
+  grid-column: 1/5;
+  grid-row: 1/3;
   text-align: center;
-  margin: 150px 35px 150px 35px;
-  padding: 25px;
-  color: black;
+  padding: 20px;
+  margin: 15px 0 15px 0;
 }
-main .title-card :hover {
-  background: #85A947;
-  color: #F5F5F5;
+main .grid-card .card-box1 h2 {
+  font-size: 3rem;
 }
-main .title-card .card-box h2 {
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-size: 35px;
+main .grid-card .card-box1 p {
+  font-size: 1.5rem;
 }
-main .title-card .card-box p {
-  padding: 10px;
-  list-style: none;
-  font-family: "tinos", serif;
-  font-size: 15px;
-  text-decoration: none;
+main .grid-card .card-box1 .leter {
   color: #263238;
+  font-size: 1.6rem;
 }
-main .title-card .card-box .leter {
-  font-size: 22px;
+main .grid-card .card-box2 {
+  grid-column: 1/3;
+  grid-row: 3/5;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 0 15px 0;
 }
-main .title-card .card-box .leter :hover {
-  color: #FCF596;
-  font-size: 1.5em;
+main .grid-card .card-box2 h2 {
+  font-size: 3rem;
 }
-@media (max-width: 480px) {
-  main .title-card {
-    margin: 50px 25px 50px 25px;
-  }
-  main .title-card .card-box h2 {
-    font-size: 2em;
-  }
-  main .title-card .card-box p {
-    font-size: 1em;
-  }
-  main .title-card .card-box .leter {
-    font-size: 1.2em;
-    color: #4C4B16;
-  }
-  
+main .grid-card .card-box2 p {
+  font-size: 1.5rem;
+}
+main .grid-card .card-box3 {
+  grid-column: 3/5;
+  grid-row: 5/7;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 0 15px 0;
+}
+main .grid-card .card-box3 h2 {
+  font-size: 3rem;
+}
+main .grid-card .card-box3 p {
+  font-size: 1.5rem;
+}
+main .grid-card .card-box4 {
+  grid-column: 1/3;
+  grid-row: 7/9;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 0 15px 0;
+}
+main .grid-card .card-box4 h2 {
+  font-size: 3rem;
+}
+main .grid-card .card-box4 p {
+  font-size: 1.5rem;
+}
+main .grid-card .card-box5 {
+  grid-column: 1/5;
+  grid-row: 9/11;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 0 15px 0;
+}
+main .grid-card .card-box5 h2 {
+  font-size: 3rem;
+}
+main .grid-card .card-box5 p {
+  font-size: 1.5rem;
+}
+main .grid-card .card-box5 .leter {
+  color: #263238;
+  font-size: 1.6rem;
 }
 
+@media screen and (max-width: 480px) {
+  main .img_fondo {
+    width: auto;
+    height: 150px;
+    background-image: url(/media/montana-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  main .grid-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  main .grid-card .card-box1 {
+    padding: 5px;
+  }
+  main .grid-card .card-box1 h2 {
+    font-size: 2rem;
+  }
+  main .grid-card .card-box1 p {
+    font-size: 1rem;
+    padding: 0 8px 0 8px;
+  }
+  main .grid-card .card-box1 .leter {
+    color: #263238;
+    font-size: 1.4rem;
+  }
+  main .grid-card .card-box2 {
+    padding: 5px;
+  }
+  main .grid-card .card-box2 h2 {
+    font-size: 2rem;
+  }
+  main .grid-card .card-box2 p {
+    font-size: 1rem;
+  }
+  main .grid-card .card-box3 {
+    padding: 5px;
+  }
+  main .grid-card .card-box3 h2 {
+    font-size: 2rem;
+  }
+  main .grid-card .card-box3 p {
+    font-size: 1rem;
+    padding: 0 8px 0 8px;
+  }
+  main .grid-card .card-box4 {
+    padding: 5px;
+  }
+  main .grid-card .card-box4 h2 {
+    font-size: 2rem;
+  }
+  main .grid-card .card-box4 p {
+    font-size: 1rem;
+    padding: 0 8px 0 8px;
+  }
+  main .grid-card .card-box5 {
+    padding: 5px;
+  }
+  main .grid-card .card-box5 h2 {
+    font-size: 2rem;
+  }
+  main .grid-card .card-box5 p {
+    font-size: 1rem;
+    padding: 0 8px 0 8px;
+  }
+  main .grid-card .card-box5 .leter {
+    color: #263238;
+    font-size: 1.4rem;
+  }
+}
 .div1 h2 {
   margin: 25px 0 30px 0;
   text-align: center;
@@ -159,37 +268,35 @@ main .title-card .card-box .leter :hover {
   color: #263238;
 }
 
-@media (max-width: 480px) {
-    .div1 h2 {
-        font-size: 2em;
-      }
-    .parent {
-        flex-direction: column;
+@media screen and (max-width: 480px) {
+  main .div1 h2 {
+    font-size: 2rem;
   }
-    .parent .div2 img {
-        width: 320px;
-        height: 280px;
-        box-shadow: none;
+  main .parent {
+    display: flex;
+    flex-direction: column;
   }
-    .parent .div2 h4 {
-        font-size: 1.3em;
+  main .parent .div2 h4 {
+    font-size: 1.2rem;
   }
-    .parent .div2 p {
-        font-size: 1em;
-        margin: 5px;
+  main .parent .div2 img {
+    width: 320px;
+    height: 280px;
+    box-shadow: none;
   }
-    .parent .div3 img {
-        width: 320px;
-        height: 280px;
-        box-shadow: none;
+  main .parent .div2 p {
+    font-size: 1rem;
   }
-    .parent .div3 h4 {
-        font-size: 1.3em;
-        margin-top: 40px;
+  main .parent .div3 h4 {
+    font-size: 1.2rem;
   }
-  .parent .div3 p {
-        font-size: 1em;
-        margin: 5px;
+  main .parent .div3 img {
+    width: 320px;
+    height: 280px;
+    box-shadow: none;
+  }
+  main .parent .div3 p {
+    font-size: 1rem;
   }
 }
 .container-videos {
@@ -209,13 +316,12 @@ main .title-card .card-box .leter :hover {
   color: #263238;
 }
 
-@media (max-width: 480px) {
-  .container-videos h5 {
-    font-size: 2em;
-    margin-top: 40px;
+@media screen and (max-width: 480px) {
+  main .container-videos h5 {
+    font-size: 1.4rem;
+    margin-top: 10px;
   }
-  .container-videos p {
-    font-size: 1em;
+  main .container-videos p {
     margin-bottom: 10px;
   }
 }
@@ -283,31 +389,31 @@ footer .footer-container .footer-top-3 a {
   text-decoration: none;
   color: black;
 }
+footer .footer-copy {
+  text-align: center;
+}
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   footer .footer-container {
     display: flex;
     flex-direction: column;
-  }  
-  .footer-top-1 {
-    font-size: 0.7em;
   }
-  .footer-top-3 {
-    font-size: 0.7em;
+  footer .footer-container .footer-top-1 {
+    border-radius: 0;
+    border: none;
+    color: #263238;
   }
-  .footer-top-3 h5 {
-    font-size: 0.8em;
+  footer .footer-container .footer-top-3 {
+    border-radius: 0;
+    border: none;
+    color: #263238;
   }
-  .footer-top-3 p {
-    font-size: 1em;
+  footer .footer-copy {
+    font-size: 0.6rem;
     text-align: center;
+    margin-top: 10px;
   }
 }
-.footer-copy {
-  font-size: 11px;
-  text-align: center;
-}
-/*quienes somos*/
 .container-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -341,29 +447,26 @@ footer .footer-container .footer-top-3 a {
   justify-content: space-evenly;
 }
 
-@media (max-width: 480px) {
-  .container-grid {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 480px) {
+  .div1-qs h2 {
+    font-size: 20px;
   }
-  .container-grid .div1-qs h2 {
-    font-size: 2.3em;
+  .div2-qs p {
+    font-size: 13px;
   }
-  .container-grid .div2-qs p {
-    font-size: 1em;
-  }
-  .container-grid .div3-qs {
+  .div3-qs {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 25px;
   }
-  .container-grid .div3-qs img {
+  .div3-qs img {
     max-height: 75%;
     max-width: 80%;
-    margin: 20px;
+    margin: 10px;
   }
-/*Metodos_de_perforacion*/
+  .div4-qs {
+    font-size: 13px;
+  }
 }
 .parent-mp {
   display: grid;
@@ -423,33 +526,45 @@ footer .footer-container .footer-top-3 a {
   font-size: 1.2rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .parent-mp {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .div1-mp h2 {
-    text-align: center;
     margin: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .div1-mp img {
+    border-radius: 20px 20px 20px 20px;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    width: 200px;
   }
   .div2-mp h2 {
     margin: 25px;
-    font-size: 1em;
+    font-size: 1.2rem;
+  }
+  .div2-mp img {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 10px;
+    width: 200px;
   }
   .div3-mp h2 {
     margin: 25px;
     font-size: 1.2rem;
   }
+  .div3-mp img {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
   .informacion h3 {
-    margin: 10px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
   .informacion p {
-    font-size: 1em;
-    margin: 20px;
+    font-size: 0.9rem;
   }
 }
 .tecno {
@@ -498,7 +613,7 @@ footer .footer-container .footer-top-3 a {
   width: 400px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .tecno {
     display: flex;
     flex-direction: column;
@@ -506,9 +621,21 @@ footer .footer-container .footer-top-3 a {
   }
   .tecno .div1-tecno {
     margin: 25px;
+    font-size: 15px;
   }
-  .div3-tecno h2 {
-    margin: 25px;
+  .tecno .div2-tecno h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .tecno .div2-tecno img {
+    width: 200px;
+  }
+  .tecno .div3-tecno h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .tecno .div3-tecno img {
+    width: 200px;
   }
 }
 * {
