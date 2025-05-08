@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
 @mixin titulos () {
         margin: 10px;
         font-size: 20px;
+        font-family: "Special Gothic Expanded One", sans-serif;
 }
 @mixin parrafos () {
         font-size: 15px;
@@ -107,6 +110,7 @@ main {
             margin: 15px 0 15px 0;
             h2{
                 font-size: 3rem;
+                font-family: "Special Gothic Expanded One", sans-serif;
             }
             p {
                 font-size: 1.5rem;
@@ -124,6 +128,7 @@ main {
             margin: 15px 0 15px 0;
             h2{
                 font-size: 3rem;
+                font-family: "Special Gothic Expanded One", sans-serif;
             }
             p {
                 font-size: 1.5rem;
@@ -137,6 +142,7 @@ main {
             margin: 15px 0 15px 0;
             h2{
                 font-size: 3rem;
+                font-family: "Special Gothic Expanded One", sans-serif;
             }
             p {
                 font-size: 1.5rem;
@@ -150,6 +156,7 @@ main {
             margin: 15px 0 15px 0;
             h2{
                 font-size: 3rem;
+                font-family: "Special Gothic Expanded One", sans-serif;
             }
             p {
                 font-size: 1.5rem;
@@ -163,6 +170,7 @@ main {
             margin: 15px 0 15px 0;
             h2{
                 font-size: 3rem;
+                font-family: "Special Gothic Expanded One", sans-serif;
             }
             p {
                 font-size: 1.5rem;

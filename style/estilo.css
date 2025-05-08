@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
 header {
   background: #948160;
   color: white;
@@ -90,6 +91,7 @@ main .grid-card .card-box1 {
 }
 main .grid-card .card-box1 h2 {
   font-size: 3rem;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 main .grid-card .card-box1 p {
   font-size: 1.5rem;
@@ -107,6 +109,7 @@ main .grid-card .card-box2 {
 }
 main .grid-card .card-box2 h2 {
   font-size: 3rem;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 main .grid-card .card-box2 p {
   font-size: 1.5rem;
@@ -120,6 +123,7 @@ main .grid-card .card-box3 {
 }
 main .grid-card .card-box3 h2 {
   font-size: 3rem;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 main .grid-card .card-box3 p {
   font-size: 1.5rem;
@@ -133,6 +137,7 @@ main .grid-card .card-box4 {
 }
 main .grid-card .card-box4 h2 {
   font-size: 3rem;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 main .grid-card .card-box4 p {
   font-size: 1.5rem;
@@ -146,6 +151,7 @@ main .grid-card .card-box5 {
 }
 main .grid-card .card-box5 h2 {
   font-size: 3rem;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 main .grid-card .card-box5 p {
   font-size: 1.5rem;
@@ -242,6 +248,7 @@ main .grid-card .card-box5 .leter {
 .parent .div2 h4 {
   margin: 10px;
   font-size: 20px;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 .parent .div2 img {
   width: 550px;
@@ -256,6 +263,7 @@ main .grid-card .card-box5 .leter {
 .parent .div3 h4 {
   margin: 10px;
   font-size: 20px;
+  font-family: "Special Gothic Expanded One", sans-serif;
 }
 .parent .div3 img {
   width: 550px;
