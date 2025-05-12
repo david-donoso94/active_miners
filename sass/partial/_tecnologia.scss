@@ -95,7 +95,7 @@
                 font-size: 1.2rem;
              }
              img {
-                width: 200px;
+                @include img-mdp-mobile()
             }
         }
         .div3-tecno {
@@ -104,7 +104,37 @@
                 font-size: 1.2rem;
              }
              img {
-                width: 200px;
+                @include img-mdp-mobile()
+            }
+        }
+    }
+    .informacion {
+        #information3{
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            h4 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            ol {
+                font-size: 1rem;
+                margin: 5px;
+            }
+        }
+        #information4 {
+            h3 {
+                font-size: 1.5rem;
+                margin: 20px;
+            }
+            h4 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1rem;
             }
         }
     }

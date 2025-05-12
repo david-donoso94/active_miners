@@ -472,24 +472,22 @@ footer .footer-copy {
 }
 
 @media screen and (max-width: 480px) {
-  .div1-qs h2 {
-    font-size: 20px;
+  .container-grid .div1-qs h2 {
+    font-size: 2rem;
   }
-  .div2-qs p {
-    font-size: 13px;
+  .container-grid .div2-qs p {
+    font-size: 1.1rem;
   }
-  .div3-qs {
+  .container-grid .div3-qs {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 25px;
   }
-  .div3-qs img {
+  .container-grid .div3-qs img {
     max-height: 75%;
     max-width: 80%;
     margin: 10px;
-  }
-  .div4-qs {
-    font-size: 13px;
   }
 }
 .parent-mp {
@@ -557,39 +555,47 @@ footer .footer-copy {
     flex-direction: column;
     align-items: center;
   }
-  .div1-mp h2 {
+  .parent-mp .div1-mp h2 {
     margin: 25px;
     font-size: 1.5rem;
     text-align: center;
   }
-  .div1-mp img {
+  .parent-mp .div1-mp img {
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 10px;
     width: 200px;
   }
-  .div2-mp h2 {
+  .parent-mp .div2-mp h2 {
     margin: 25px;
     font-size: 1.2rem;
   }
-  .div2-mp img {
+  .parent-mp .div2-mp img {
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 10px;
     width: 200px;
   }
-  .div3-mp h2 {
+  .parent-mp .div3-mp h2 {
     margin: 25px;
     font-size: 1.2rem;
   }
-  .div3-mp img {
+  .parent-mp .div3-mp img {
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 10px;
     width: 200px;
   }
-  .informacion h3 {
-    font-size: 1.2rem;
+  .informacion #information1 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
-  .informacion p {
-    font-size: 0.9rem;
+  .informacion #information1 p {
+    font-size: 1rem;
+  }
+  .informacion #information2 h3 {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+  .informacion #information2 p {
+    font-size: 1rem;
   }
 }
 .tecno {
@@ -685,6 +691,8 @@ footer .footer-copy {
     font-size: 1.2rem;
   }
   .tecno .div2-tecno img {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 10px;
     width: 200px;
   }
   .tecno .div3-tecno h2 {
@@ -692,7 +700,33 @@ footer .footer-copy {
     font-size: 1.2rem;
   }
   .tecno .div3-tecno img {
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 10px;
     width: 200px;
+  }
+  .informacion #information3 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .informacion #information3 h4 {
+    font-size: 1.3rem;
+  }
+  .informacion #information3 p {
+    font-size: 1rem;
+  }
+  .informacion #information3 ol {
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .informacion #information4 h3 {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+  .informacion #information4 h4 {
+    font-size: 1.3rem;
+  }
+  .informacion #information4 p {
+    font-size: 1rem;
   }
 }
 * {
