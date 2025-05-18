@@ -67,9 +67,9 @@ header .header-nav a:hover {
   }
 }
 main .img_fondo {
+  background-image: url("/media/montana-fondo.jpg");
   width: 100%;
   height: 500px;
-  background-image: url("/media/montana-fondo.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
