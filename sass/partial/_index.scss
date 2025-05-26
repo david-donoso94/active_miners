@@ -38,24 +38,28 @@ header {
         }
     }
     .header-nav{
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        text-align: center;
-        a{
-            color: #fff;
-            text-decoration: none;
-            align-content: center;
-            padding: 1rem 1rem;
-            margin-bottom: 15px;
-            background-color: #4C4B16;
-            border-radius: 5px;
-            font-size: 14px;
-            
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            list-style: none;
+            li {
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    align-content: center;
+                    padding: 1rem 1rem;
+                    margin-bottom: 15px;
+                    background-color: #4C4B16;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+                a:hover{
+                    background-color: #6b6a25;
+                }
+            }
         }
-        a:hover{
-            background-color: #6b6a25;
-        }
+        
     }
 }
 @include mobile {
@@ -75,10 +79,43 @@ header {
              }
         }
         .header-nav {
-            a {
-                padding: 9px;
-                font-size: 1rem;
+            ul {
+                li {
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
             }
+            
+        }
+    }
+    
+}
+@include tablet {
+    header {
+        .header-top {
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.2rem;
+                padding: 7px;
+            }
+            img {
+                margin: 10px;
+                height: 80px;
+                width: 80px;
+             }
+        }
+        .header-nav {
+            ul {
+                li {
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            
         }
     }
     
@@ -265,7 +302,79 @@ main {
         }
     }
 }
-    
+@include tablet {
+     main {
+        .img_fondo{
+            width: auto;
+            height: 200px;
+            background-image: url(/media/montana-fondo.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .grid-card {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            .card-box1 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                    padding: 0 8px 0 8px;
+                }
+                .leter {
+                    color: #263238;
+                    font-size: 1.4rem;
+                }
+            }
+            .card-box2 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .card-box3 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                    padding: 0 8px 0 8px;
+                }
+            }
+            .card-box4 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                    padding: 0 8px 0 8px;
+                }
+            }
+            .card-box5 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                    padding: 0 8px 0 8px;
+                }
+                .leter {
+                    color: #263238;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}   
    
 //box litidero y metalifero
 
@@ -351,6 +460,45 @@ main {
     }
     
 }
+@include tablet {
+    main {
+        .div1 {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+        .parent{
+            display: flex;
+            flex-direction: column;
+            .div2 {
+                h4 {
+                    font-size: 1.2rem;
+                }
+                img {
+                    width: 320px;
+                    height: 280px;
+                    box-shadow: none;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .div3 {
+                h4 {
+                    font-size: 1.2rem;
+                }
+                img {
+                    width: 320px;
+                    height: 280px;
+                    box-shadow: none;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
 .container-videos {
     display: flex;
     flex-direction: column;
@@ -378,6 +526,19 @@ main {
             }
         }
     }  
+}
+@include tablet {
+    main {
+        .container-videos {
+            h5 {
+                font-size: 1.4rem;
+                margin-top: 10px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    } 
 }
 footer {
     background-color: #948160;
@@ -439,6 +600,47 @@ footer {
 }
 @include mobile {
     footer {
+        .footer-container{
+            display: flex;
+            flex-direction: column;
+           .footer-top-1{
+            h5 {
+                margin: 8px;
+                color: white;
+                font-size: 1rem;
+            }
+            a {
+                text-decoration: none;
+                color: #FCF596;
+                margin: 5px;
+                font-size: 0.8rem;
+            }
+           } 
+        }
+        .footer-top-2 {
+            display: flex;
+            justify-content: space-around;
+            a {
+                margin: 8px;
+            }
+        }
+        .footer-top-3 {
+           h5 {
+            font-size: 1rem;
+           }
+           p {
+            font-size: 0.8rem;
+           } 
+        }
+        .footer-copy{
+            font-size: 0.6rem;
+            text-align: center;
+            margin-top: 10px;        
+        }      
+    }
+}
+@include tablet {
+footer {
         .footer-container{
             display: flex;
             flex-direction: column;

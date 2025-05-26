@@ -56,3 +56,28 @@
         }
     }  
 }
+@include tablet {
+    .container-grid {
+        .div1-qs {
+            h2{
+                font-size: 2rem;
+            }
+        }
+        .div2-qs {
+            p{
+                font-size: 1.1rem;
+            }
+        }
+        .div3-qs {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom:25px;
+                img{
+                    max-height: 75%;
+                    max-width: 80%;
+                    margin: 10px;
+                }
+        }
+    } 
+}

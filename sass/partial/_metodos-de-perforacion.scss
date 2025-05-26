@@ -116,3 +116,58 @@
         }
     }       
 }
+@include tablet {
+    .parent-mp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            .div1-mp {
+                h1{
+                    margin: 25px ;
+                    font-size: 1.8rem;
+                    text-align: center;  
+            }
+                img {
+                    @include img-mdp-mobile()
+                }
+            }       
+            .div2-mp {
+                h2 {
+                    margin: 25px ;
+                    font-size: 1.2rem;
+                }
+            img {
+                @include img-mdp-mobile()
+                }
+            }
+            .div3-mp {
+                h2 {
+                    margin: 25px ;
+                    font-size: 1.2rem;
+                }
+                img {
+                    @include img-mdp-mobile()
+                }
+            }
+        }
+    .informacion {
+        #information1{
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        #information2 {
+            h3 {
+                font-size: 1.5rem;
+                margin: 20px;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
