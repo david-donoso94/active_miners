@@ -1,5 +1,14 @@
 
-
+@mixin mobile {
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 769px) and (min-width:481px) {
+        @content;
+    }
+}
 header {
     h2 {
         color: white;
@@ -37,7 +46,7 @@ main {
             ul {
                 li {
                     a {
-                        font-size: 0.8rem;
+                        font-size: 0.7rem;
                     }
                 }
             }
@@ -66,7 +75,7 @@ main {
             ul {
                 li {
                     a {
-                        font-size: 0.7rem;
+                        font-size: 0.71rem;
                     }
                 }
             }
@@ -74,4 +83,32 @@ main {
         }
     }
     
+}
+@include desktop {
+    header {
+        .header-top {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+                padding: 7px;
+            }
+            img {
+                margin: 10px;
+                height: 80px;
+                width: 80px;
+             }
+        }
+        .header-nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            
+        }
+    }
 }

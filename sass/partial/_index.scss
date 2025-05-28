@@ -120,6 +120,35 @@ header {
     }
     
 }
+@include desktop {
+    header {
+        .header-top {
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.2rem;
+                padding: 7px;
+            }
+            img {
+                margin: 10px;
+                height: 80px;
+                width: 80px;
+             }
+        }
+        .header-nav {
+            ul {
+                li {
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
 
 ///Presentacion index
 
@@ -156,7 +185,7 @@ main {
             .leter {
                 color: #263238;
                 font-size: 1.6rem;
-                & :hover{
+                &:hover{
                     font-size: 2rem;
                     color: #7c7b34;
                 }
@@ -374,7 +403,80 @@ main {
             }
         }
     }
-}   
+}
+@include desktop {
+     main {
+        .img_fondo{
+            width: auto;
+            height: 200px;
+            background-image: url(/media/montana-fondo.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .grid-card {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            .card-box1 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                    padding: 0 8px 0 8px;
+                }
+                .leter {
+                    color: #263238;
+                    font-size: 1.4rem;
+                }
+            }
+            .card-box2 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+            .card-box3 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    padding: 0 8px 0 8px;
+                }
+            }
+            .card-box4 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    padding: 0 8px 0 8px;
+                }
+            }
+            .card-box5 {
+                padding: 5px;
+                h2{
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    padding: 0 8px 0 8px;
+                }
+                .leter {
+                    color: #263238;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}     
    
 //box litidero y metalifero
 
@@ -480,7 +582,7 @@ main {
                     box-shadow: none;
                 }
                 p {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                 }
             }
             .div3 {
@@ -493,7 +595,46 @@ main {
                     box-shadow: none;
                 }
                 p {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+@include desktop {
+    main {
+        .div1 {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+        .parent{
+            display: flex;
+            flex-direction: column;
+            .div2 {
+                h4 {
+                    font-size: 1.6rem;
+                }
+                img {
+                    width: 450px;
+                    height: 320px;
+                    box-shadow: none;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+            .div3 {
+                h4 {
+                    font-size: 1.6rem;
+                }
+                img {
+                    width: 450px;
+                    height: 320px;
+                    box-shadow: none;
+                }
+                p {
+                    font-size: 1.2rem;
                 }
             }
         }

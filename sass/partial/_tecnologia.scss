@@ -1,3 +1,13 @@
+@mixin mobile {
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 769px) and (min-width:481px) {
+        @content;
+    }
+}
 .tecno {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -196,6 +206,67 @@
             }
             p {
                 font-size: 1rem;
+            }
+        }
+    }
+}
+@include desktop {
+    .tecno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .div1-tecno {
+            h1 {
+                margin: 25px ;
+                font-size: 2rem;
+            }    
+        }
+        .div2-tecno {
+            h2 {
+                margin-bottom: 15px;
+                font-size: 1.5rem;
+             }
+             img {
+                @include img-mdp-mobile()
+            }
+        }
+        .div3-tecno {
+            h2 {
+                margin-bottom: 15px;
+                font-size: 1.5rem;
+             }
+             img {
+                @include img-mdp-mobile()
+            }
+        }
+    }
+    .informacion {
+        #information3{
+            h3 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+            h4 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+            ol {
+                font-size: 1.4rem;
+                margin: 5px;
+            }
+        }
+        #information4 {
+            h3 {
+                font-size: 1.8rem;
+                margin: 20px;
+            }
+            h4 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.4rem;
             }
         }
     }

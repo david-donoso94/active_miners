@@ -8,3 +8,8 @@
         @content;
     }
 }
+@mixin desktop {
+    @media screen and (max-width: 1024px) and (min-width:770px) {
+        @content;
+    }
+}

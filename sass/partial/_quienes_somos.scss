@@ -1,36 +1,49 @@
-.container-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    .div1-qs {
-        grid-column: 2/4;
-        grid-row: 1/2;
-        text-align: center;
-        margin: 25px;
-        align-content: center;
-        h2 {
-            font-family:"Special Gothic Expanded One", sans-serif;
-            font-size: 2.2rem;
-        }
-    }
-    .div2-qs {
-        grid-column: 1/5;
-        grid-row: 2/4;
-        text-align: center;
-        margin: 35px;
-        p {
-            font-size: 1.5rem;
-            margin: 8px;
-        }
-    }
-    .div3-qs {
-        grid-column: 1/5;
-        grid-row: 4/6;
-        margin: 1rem 0 1rem 1rem;
-        display: flex;
-        justify-content: space-evenly;
+@mixin mobile {
+    @media screen and (max-width: 480px){
+        @content;
     }
 }
+@mixin tablet {
+    @media screen and (max-width: 769px) and (min-width:481px) {
+        @content;
+    }
+}
+main {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        .div1-qs {
+            grid-column: 2/4;
+            grid-row: 1/2;
+            text-align: center;
+            margin: 25px;
+            align-content: center;
+            h2 {
+                font-family:"Special Gothic Expanded One", sans-serif;
+                font-size: 2.2rem;
+            }
+        }
+        .div2-qs {
+            grid-column: 1/5;
+            grid-row: 2/4;
+            text-align: center;
+            margin: 35px;
+            p {
+                font-size: 1.5rem;
+                margin: 8px;
+            }
+        }
+        .div3-qs {
+            grid-column: 1/5;
+            grid-row: 4/6;
+            margin: 1rem 0 1rem 1rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
 @include mobile {
     .container-grid {
         .div1-qs {
@@ -66,6 +79,31 @@
         .div2-qs {
             p{
                 font-size: 1.1rem;
+            }
+        }
+        .div3-qs {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom:25px;
+                img{
+                    max-height: 75%;
+                    max-width: 80%;
+                    margin: 10px;
+                }
+        }
+    } 
+}
+@include desktop {
+    .container-grid {
+        .div1-qs {
+            h2{
+                font-size: 1rem;
+            }
+        }
+        .div2-qs {
+            p{
+                font-size: 1.5rem;
             }
         }
         .div3-qs {
